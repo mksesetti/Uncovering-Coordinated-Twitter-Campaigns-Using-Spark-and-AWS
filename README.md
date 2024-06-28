@@ -10,7 +10,7 @@ Social media platforms have become an integral part of our daily lives, and Twit
  # Data Collection 
 The data collection process for this project involved using the Twitter API to retrieve tweets for each of the 10 selected trends. The tweets were retrieved using specific search queries that included relevant hashtags, keywords, and timeframes. The data was collected in JSON format, which is the default format provided by the Twitter API. Each tweet was represented as a JSON object that contained various fields such as user information, date and time of the tweet, tweet content, and engagement metrics such as retweets and likes. 
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/e4d1187a-3156-4cc2-a947-9ed363f1571b)
+![Archirechture!](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/0d6aa943-f729-4eea-aa43-704a8e0a2944)
 
 3.1  Dataset Description 
 A detailed explanation of each column that was pulled during the data collection process: 
@@ -52,19 +52,21 @@ After loading all the datasets into one, some data cleaning and preprocessing on
 The project started with the goal of analyzing Twitter data related to a particular hashtag to gain insights. To achieve this, it was decided that cloud-based architecture would be used to handle the large volume of data and the processing required. Snscrape and Sntwitter were first used. Then, TwitterSearchScraper was used to retrieve twitter data related to the hashtag and dump it into an S3 bucket in JSON format. S3 was chosen because it is a scalable and cost-effective way to store large volumes of unstructured data. Next, PySpark was used to perform data cleaning, analysis, and structuring of the data on AWS EMR. Then the cleaned data was stored in a structured form in Parquet format back in S3. Parquet was chosen because it is a columnar storage format that is optimized for performance and can handle large datasets efficiently. 
 Finally, the structured data from S3 was loaded into AWS Redshift, a cloud-based data warehousing solution. Redshift was chosen because it allows for high-speed querying and can handle large volumes of structured data efficiently. Then, AWS Quicksight was connected to Redshift to create an interactive dashboard that provides real-time insights into user sentiment and behavior related to the hashtag. 
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/ef63ef66-107d-411b-9b93-d993baab7fc0)
+![image](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/b9da366e-b5ca-4297-8bad-cb2db5ac8439)
+
 
 In summary, this architecture allows efficient processing and analysis of large volumes of twitter data using cloud-based solutions. This then enables the gain of valuable insights into user behavior and sentiment related to the hashtag in real-time, which can be used for various business and marketing purposes. 
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/7b09dc6d-7790-4ae9-b337-4360a1ce78f8)
+![image](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/a538bcb8-7116-49ee-aa3a-cc647a0796b6)
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/27f57ced-6ad3-4fa9-96ef-b4fd4763e510)
+![image](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/cd7bb89d-069e-4998-a1fd-d2b1b0e0d880)
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/7e3b03e1-2ba7-47dd-9dac-48b7a02ce175)
+![image](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/5e8073e5-ed01-4bb2-9583-db7197bf2856)
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/6f643d14-1630-4404-959b-7a85eace2360)
+![image](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/431a0bfd-3ada-4de0-aa07-ce72dcb7973c)
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/3c96111d-dd60-4f1e-ba1c-4c348bd05623)
+![image](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/1c911f42-d2ec-4f56-aedf-2f18c6da5c78)
+
 
 
 
@@ -74,13 +76,14 @@ Twitter Trends Analysis: #advancehbdmaheshbabu
 The data consisted of a total of 302,595 tweets, with 83% of tweets having more likes than retweets. A total of 38,719 duplicate tweets were found, making up 13% of the total tweets. The data also showed that there were 9,921 distinct users and an average of 12 retweets per account. The average time gap between tweets was calculated to be 3,230 seconds. The data further showed that there were 12,923 quote tweets and 23,121 replies in total. 
 To better understand the data and its patterns, common users in the trends were also analyzed, revealing that only 4.08% of the users were common across different trends. The data visualization process allowed for a clear representation of these insights and facilitated better decision-making for this project. 
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/e8179013-1ae1-4f78-bf22-1e24e8edddaa)
+![image](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/8502edf6-82ab-4d49-b58b-7d6894e24228)
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/8178e81f-f8cc-40a3-b588-dd21d6e5f9a4)
+![image](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/a554812b-bb9b-4fa6-af0a-63f22adabd27)
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/2bfb6b46-ee24-47fe-9393-44e97007c871)
+![image](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/53145c08-2c86-4b3d-a0c6-2df7cdb9fcf5)
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/3fb6b437-6f78-4d2b-9348-83caa475ed71)
+![image](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/e66c66e8-49aa-4576-9c25-52d36ee84d31)
+
 
 # Twitter Trends Analysis: #Gobackmodi vs #Welcomemodi 
 During the Indian General Election in February 2019, two Twitter trends emerged, one in support of Modi with the hashtag #Welcomemodi, and the other against him with #Gobackmodi. Using data engineering and analytics techniques, data related to these two trends were extracted and processed to gain insights into user engagement and sentiment. 
@@ -89,13 +92,13 @@ On the other hand, for the pro-Modi campaign (#Welcomemodi), 32,493 tweets were 
 
 # The first two images show how the content is copy pasted by individuals
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/4c728f2a-b282-4be5-9c12-368755bad408)
+![image](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/1386075f-8b30-46b1-a358-c0e88c16e0cb)
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/eaa38fbb-064d-49c0-bcf3-3d688024172c)
+![image](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/503b451c-1aef-4fb0-ae85-da60df776cf6)
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/4ffd4161-1d5e-4530-9b33-3805bc1ae77a)
+![image](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/93a26c4a-a7fb-4cfa-9f94-0b616a98bf6e)
 
-![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/61b13126-3b45-4a4a-9d0a-f9b489edcd6e)
+![image](https://github.com/mksesetti/Uncovering-Coordinated-Twitter-Campaigns-Using-Spark-and-AWS/assets/172356704/aa1ddca7-e2f8-4307-ba83-cad53322c381)
 
 Overall, this data visualization and analysis allowed the identification of key patterns and insights into user engagement and sentiment in these two twitter trends. 
 
